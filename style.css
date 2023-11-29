@@ -170,7 +170,6 @@ body {
 
 .menu .menuContent {
   position: relative;
-
   top: 50%;
   font-size: 54px;
   text-align: center;
@@ -335,6 +334,26 @@ body {
 .email:hover {
   color: white;
 }
+
+.btnContact{
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  background: #e2434b;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.btnContact:hover {
+  background-color: #ff9eaa;
+}
+
 /* MY PROJECTS */
 
 .container-projects {
@@ -489,8 +508,448 @@ form {
   font-family: "Playfair Display", serif;
 }
 
-@media all and (max-width: 800px) {
-  .container-presentation {
-    flex-wrap: wrap;
+
+
+
+@media all and (max-width:1500px){
+  /*MAIN PAGE */
+  body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+
+  }
+  .photo{
+    display:none;
+  }
+  .container-presentation{
+    max-width:100%;
+  }
+  .container-text {
+  width: 100%;
+  padding-top: 200px;
+  padding-left: 160px;
+
+}
+  .greeting {
+  font-size: 20px;
+}
+
+.name {
+  font-size: 55px;
+}
+
+.job {
+  font-size: 25px;
+}
+}
+
+@media all and (max-width:1200px){
+   /*ABOUT ME */
+  
+.container-about {
+    width:100%;
+  
+}
+  .myPicture {
+  width: 390px;
+  height: 540px;
+}
+
+.container-about-photo-text {
+  width: 80%;
+
+}
+
+.container-about-contenu {
+  max-width: 100%;
+}
+
+.container-about-text {
+  max-width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 70px;
+  width: 220px;
+  height: 320px;
+}
+
+
+.container-about-photo-text {
+  width: 70%;
+}
+
+.container-about-contenu {
+  width: 100%;
+}
+
+.container-about-text {
+  position: absolute;
+  top: 60px;
+  left: 370px;
+  width: 350px;
+  height: 550px;
+}
+
+  .desk_container{
+    display:none;
+  }
+  
+  form {
+  width: 80%;
+  border-radius:10px;
+}
+}
+
+@media all and (max-width:900px){
+   /*ABOUT ME */
+  
+.container-about {
+    width:100%;
+}
+  .myPicture {
+  width: 350px;
+  height: 520px;
+}
+
+.container-about-text {
+  max-width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 270px;
+  width: 350px;
+  height: 520px;
+}
+
+
+.container-about-photo-text {
+  width: 80%;
+}
+
+.container-about-contenu {
+  width: 100%;
+}
+  
+  .btnContact{
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 14px;
+}
+
+  
+}
+
+
+@media all and (max-width:800px){
+  /*MAIN PAGE */
+
+  .container-presentation{
+    max-width:100%;
+  }
+  .container-text {
+  width: 100%;
+  padding-top: 160px;
+  padding-left: 80px;
+
+}
+  .greeting {
+  font-size: 18px;
+}
+
+.name {
+  font-size: 50px;
+}
+
+.job {
+  font-size: 22px;
+}
+
+  
+    /*ABOUT ME */
+  .container-about{
+    max-width:100%;
+  }
+  
+.myPicture {
+  width: 200px;
+  height: 350px;
+}
+
+.container-about-text {
+  position: absolute;
+  top: 20px;
+  left: 150px;
+  width: 240px;
+  height: 450px;
+}
+
+.container-about-photo-text {
+  width: 60%;
+}
+
+  .tech {
+  font-size: 13px;
+}
+
+.parAboutTwo {
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.parAboutOne {
+  padding-bottom: 5px;
+  padding-top: 1px;
+}
+   
+
+.btnContact{
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 14px;
+}
+  /*PROJECTS */
+  .container-projects{
+    max-width:100%;
+  }
+  .image{
+    max-width:100%;
+  }
+  .mockup{
+    max-width:100%;
+    width: 450px;
+    height: 330px;
+  }
+  .container-heading {
+  padding-bottom: 60px;
+}
+  .container-projects {
+  max-width:100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.container-projects-list {
+  max-width:100%;
+}
+.containers_in_line {
+  max-width:100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.project {
+  max-width:100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.image {
+  margin-bottom: 40px;
+  width: 380px;
+  height: 300px;
+}
+
+.projects__modal {
+  max-width:100%;
+  width: 500px;
+  height: 330px;
+}
+   /*CONTACT*/
+
+
+.container-contacts-contenu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+form {
+  width: 90%;
+  border-radius:10px;
+}
+
+.desk {
+  width: 90%;
+  border-radius:10px;
+  
+}
+  
+
+}
+
+
+@media all and (max-width:800px){
+   
+    /*ABOUT ME */
+  .container-about{
+    max-width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  
+.myPicture {
+  width: 250px;
+  height: 420px;
+}
+  .container-about-contenu{
+    width:60%;
+  }
+.container-about-text {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  width: 240px;
+  height: 450px;
+}
+
+.container-about-photo-text {
+  width: 100%;
+}
+  
+
+  .tech {
+  font-size: 13px;
+}
+
+.parAboutTwo {
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.parAboutOne {
+  padding-bottom: 5px;
+  padding-top: 1px;
+}
+   
+
+.btnContact{
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 14px;
+}
+}
+
+
+@media all and (max-width:560px){
+   
+    /*ABOUT ME */
+  .container-about{
+    max-width:100%;
+  }
+  
+.myPicture {
+  width: 200px;
+  height: 300px;
+}
+  .container-about-contenu{
+    width: 70%;
+  }
+.container-about-text {
+  position: absolute;
+  top: 20px;
+  left: 160px;
+  width: 220px;
+  height: 350px;
+  padding:15px;
+}
+
+.container-about-photo-text {
+  width: 100%;
+}
+  
+
+  .tech {
+  font-size: 11px;
+}
+
+.parAboutTwo {
+  line-height: 19px;
+  font-size: 12px;
+}
+
+.parAboutOne {
+  padding-bottom: 5px;
+  padding-top: 1px;
+}
+   
+
+.btnContact{
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 11px;
+}
+  
+  .container-projects{
+    margin-top: 100px;
+  }
+}
+
+
+@media all and (max-width:490px){
+  
+     /*MAIN PAGE */
+  
+    .greeting {
+  font-size: 14px;
+}
+
+.name {
+  font-size: 40px;
+}
+
+.job {
+  font-size: 15px;
+}
+  
+    /*ABOUT ME */
+  .container-about{
+    max-width:100%;
+  }
+  
+.myPicture {
+  width: 170px;
+  height: 270px;
+}
+  .container-about-contenu{
+    width: 100%;
+  }
+.container-about-text {
+  position: absolute;
+  top: 20px;
+  left: 160px;
+  width: 200px;
+  height: 350px;
+  padding:15px;
+}
+
+.container-about-photo-text {
+  width: 100%;
+}
+  
+
+  .tech {
+  font-size: 11px;
+}
+
+.parAboutTwo {
+  line-height: 15px;
+  font-size: 12px;
+}
+
+.parAboutOne {
+  padding-bottom: 5px;
+  padding-top: 1px;
+}
+   
+
+.btnContact{
+  margin-top: 2px;
+  padding: 7px;
+  font-size: 11px;
+}
+  
+  .container-projects{
+    margin-top: 100px;
   }
 }
